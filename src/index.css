@@ -1076,3 +1076,33 @@ body {
   clip: rect(0 0 0 0);
   white-space: nowrap;
 }
+
+/* ============ BARE: no borders, no cards, whitespace only ============ */
+.card, .stat, .stock-card, .auth-card {
+  border: none !important;
+  box-shadow: none !important;
+  background: transparent !important;
+  border-radius: 0 !important;
+}
+.card { padding: 0; margin-bottom: 32px; }
+.stat-grid { gap: 24px 12px; margin: 8px 0 32px; }
+.stat { padding: 0; }
+.stat-value { font-size: 30px; }
+.stock-grid { gap: 4px; }
+.stock-card { padding: 14px 0; }
+.stock-card + .stock-card { border-top: 1px solid var(--line-soft) !important; border-radius: 0; }
+.photo-fallback { border-radius: 12px; }
+.bottom-nav { border-top: none !important; box-shadow: 0 -8px 24px rgba(0,0,0,0.04); }
+.tab-fab { box-shadow: 0 4px 16px rgba(0,0,0,0.18); }
+.btn.primary { box-shadow: none; }
+.seg { background: transparent; border: none !important; padding: 0; gap: 20px; }
+.seg button { padding: 8px 2px; border-radius: 0; color: var(--text-3); }
+.seg button.active { background: transparent; color: var(--text); box-shadow: none; border-bottom: 2px solid var(--text) !important; }
+.field input, .field select, .field textarea, .search-row input {
+  border: none !important;
+  border-bottom: 1px solid var(--line) !important;
+  border-radius: 0;
+  padding-left: 0;
+  background: transparent;
+}
+.search-row { border: none !important; background: transparent; padding: 0; }
